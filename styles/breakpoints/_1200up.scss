@@ -1,0 +1,182 @@
+/******************************************************************
+
+Stylesheet: 1200px以上のモニタで適用
+
+******************************************************************/
+
+.c-txt-lr {
+  font-size: 2.8rem;
+}
+
+.c-txt-sm {
+  font-size: 1rem;
+}
+
+.c-txt-xs {
+  font-size: 1rem;
+}
+
+.c-container {
+  padding: 0 12vw;
+}
+
+.view-pc {
+  display: none;
+}
+
+//#info
+.p-info {
+  & h3 {
+    font-size: 1.4rem;
+  }
+
+  .page-link {
+    font-size: 1.2rem;
+  }
+}
+
+//#concept
+.p-concept {
+  .c-title {
+    top: 4%;
+  }
+
+  .c-txtarea {
+    padding: 2vw;
+  }
+
+  .p-speciality {
+    &__subtit {
+      font-size: .8rem;
+      margin: 2vw 0;
+    }
+
+    &__item {
+      margin-left: 1vw;
+
+      & img {
+        height: 300px;
+      }
+    }
+
+    &__txt {
+      font-size: .7rem;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+//#menu {
+.p-menu {
+  .c-title {
+    top: 1%;
+  }
+
+  .menu-contents {
+    .menu-title {
+      top: 12vw;
+    }
+
+  }
+}
+
+//#access
+.p-access {
+  & .c-txtarea {
+    top: 14%;
+  }
+
+  & .c-txt-sm {
+    margin-top: 2vw;
+    line-height: 4;
+  }
+
+  & .view-pc {
+    display: block;
+  }
+}
+
+//#header
+.header {
+  height: 110px;
+
+  & .logo {
+    margin: 40px 20px 0 80px;
+    width: 300px;
+    height: 60px;
+  }
+}
+
+//#news
+.p-news {
+  &__tit {
+    padding-top: 3vw;
+    margin-bottom: 1vw;
+  }
+
+  &__item {
+    padding: 2vw 3vw;
+  }
+}
+
+//#footer 
+.footer {
+  padding: 8vw 0;
+}
+
+//mobile-menu
+.mobile-menu {
+  &__ul {
+    padding-top: 10vw;
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+.news {
+  padding-top: 15vw;
+
+  & .c-container {
+    padding: 0 10vw 10vw 10vw;
+  }
+
+  & .c-title02 {
+    padding-bottom: 0;
+    margin-bottom: 2vw;
+
+    & .num {
+      padding-left: 0;
+    }
+  }
+
+  &__list {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+
+    & a {
+      padding: 3vw 0 3vw 5vw;
+    }
+  }
+
+  & .p-news__block {
+    padding: 8vw 0 0 0;
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  & .c-container {
+    padding: 0 12vw;
+  }
+
+  &__list {
+    padding-top: 6vw;
+  }
+
+  &__contents {
+    padding: 8vw 0;
+  }
+}
