@@ -771,18 +771,29 @@ img {
 }
 
 .icon-tel {
-  position: relative;
-}
-
-.icon-tel::before {
-  content: '';
-  display: block;
-  background-image: url(/images/home/icon-tel.png);
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 17px;
-  width: 17px;
+  height: 12px;
+  width: 12px;
+}
+
+.icon-net {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/icon-link-1-black.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 13px;
+  width: 13px;
 }
 
 .icon-map {
@@ -793,21 +804,6 @@ img {
   content: '';
   display: block;
   background-image: url(/images/home/icon-map.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 17px;
-  width: 17px;
-}
-
-.icon-net {
-  position: relative;
-}
-
-.icon-net::before {
-  content: '';
-  display: block;
-  background-image: url(/images/home/icon-calendar.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -881,18 +877,17 @@ img {
   left: 0;
   background-color: #fff;
   opacity: .7;
-  height: 7vh;
+  height: 7.5vh;
   width: 100%;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  z-index: 2000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header .sp-navbtn__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -904,12 +899,26 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 60vw;
+  width: 77vw;
   margin: auto;
 }
 
 .header .sp-navbtn__container a {
+  position: relative;
+  color: #3b3b3b;
+  font-size: 14px;
+  letter-spacing: 1px;
   display: block;
+  padding-right: 18px;
+}
+
+.header .sp-navbtn__container .tel {
+  letter-spacing: 2px;
+}
+
+.header .sp-navbtn__container a:hover,
+.header .sp-navbtn__container a:active {
+  text-decoration: underline;
 }
 
 .header .hide.sp-navbtn {

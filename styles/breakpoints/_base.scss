@@ -160,19 +160,29 @@ img {
 }
 
 .icon-tel {
-  position: relative;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/icon-tel.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 12px;
+  width: 12px;
+}
 
-  &::before {
-    content: '';
-    display: block;
-    background-image: url(/images/home/icon-tel.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 17px;
-    width: 17px;
-  }
-
+.icon-net {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/icon-link-1-black.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 13px;
+  width: 13px;
 }
 
 .icon-map {
@@ -191,21 +201,6 @@ img {
 
 }
 
-.icon-net {
-  position: relative;
-
-  &::before {
-    content: '';
-    display: block;
-    background-image: url(/images/home/icon-calendar.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 17px;
-    width: 17px;
-  }
-
-}
 
 .icon-insta {
   position: relative;
@@ -272,15 +267,15 @@ img {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: $cWhite;
     opacity: .7;
-    height: 7vh;
+    height: 7.5vh;
     width: 100%;
-    transition: all 0.4s;
+    z-index: 2000;
+    transition: all.3s;
 
     &__container {
       display: flex;
-      justify-content: space-around;
       align-items: center;
       justify-content: space-between;
       position: absolute;
@@ -288,11 +283,25 @@ img {
       bottom: 0;
       left: 0;
       right: 0;
-      width: 60vw;
+      width: 77vw;
       margin: auto;
 
       & a {
+        position: relative;
+        color: $cBlack;
+        font-size: 14px;
+        letter-spacing: 1px;
         display: block;
+        padding-right: 18px;
+      }
+
+      & .tel {
+        letter-spacing: 2px;
+      }
+
+      & a:hover,
+      a:active {
+        text-decoration: underline;
       }
     }
   }
