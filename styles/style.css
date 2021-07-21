@@ -832,13 +832,6 @@ img {
   width: 20px;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2000;
-}
-
 .header .logo__img {
   display: inline-block;
 }
@@ -1723,7 +1716,7 @@ img {
 
 .mobile-menu__nav address a span {
   display: inline-block;
-  border-bottom: 1px solid #295282;
+  border-bottom: 1px solid #474747;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.02em;
@@ -1766,7 +1759,7 @@ img {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 4000;
   overflow: hidden;
   height: 55px;
   width: 100%;
@@ -1841,7 +1834,7 @@ img {
 }
 
 .menu-open.mobile-menu {
-  z-index: 1000;
+  z-index: 3000;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -webkit-transform: none;
