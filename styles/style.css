@@ -956,6 +956,10 @@ img {
   color: #fff;
 }
 
+.p-top .swiper-container {
+  height: 91vh;
+}
+
 @media (max-width: 959px) {
   .p-top .swiper-container .view-pc {
     display: none;
@@ -2492,6 +2496,10 @@ Stylesheet: 960px以上のモニタで適用
     display: none;
   }
   .header .pc-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2499,6 +2507,7 @@ Stylesheet: 960px以上のモニタで適用
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 4vw 10vw 0 0;
+    width: 100%;
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     border-bottom: 1px solid #242424;
@@ -2861,9 +2870,6 @@ Stylesheet: 1200px以上のモニタで適用
   }
   .p-access .view-pc {
     display: block;
-  }
-  .header {
-    height: 110px;
   }
   .header .logo {
     margin: 40px 20px 0 80px;

@@ -349,6 +349,8 @@ img {
   }
 
   & .swiper-container {
+    height: 91vh;
+
     @media (max-width:959px) {
       .view-pc {
         display: none;

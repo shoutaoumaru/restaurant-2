@@ -73,9 +73,14 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   & .pc-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
     display: flex;
     justify-content: space-between;
     padding: 4vw 10vw 0 0;
+    width: 100%;
     backdrop-filter: blur(3px);
     border-bottom: 1px solid #242424;
 
