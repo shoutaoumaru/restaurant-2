@@ -1018,7 +1018,7 @@ img {
 }
 
 .p-concept .c-txtarea {
-  top: 6%;
+  top: 8%;
 }
 
 .p-concept .p-speciality {
@@ -1073,7 +1073,7 @@ img {
 }
 
 .p-menu .menu-contents {
-  padding: 25vw 12vw 0 12vw;
+  padding: 15vw 12vw 0 12vw;
   font-weight: 100;
 }
 
@@ -2323,6 +2323,9 @@ Stylesheet: 600px以上のモニタで適用
   .p-concept .c-img img {
     height: 45vh;
   }
+  .p-concept .c-txtarea {
+    top: 12%;
+  }
   .p-concept .c-txtarea .ja {
     font-size: .8rem;
   }
@@ -2571,7 +2574,7 @@ Stylesheet: 960px以上のモニタで適用
     color: #3b3b3b;
   }
   .p-concept .c-txtarea {
-    top: 10vw;
+    top: 25vw;
     left: 45vw;
   }
   .p-concept .c-txtarea .ja {
