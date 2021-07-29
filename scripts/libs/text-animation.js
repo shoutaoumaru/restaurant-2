@@ -18,15 +18,10 @@ class BgAnimation {
 }
 //ページロード時のテキストアニメーション
 document.addEventListener('DOMContentLoaded', function () {
-  setTimeout(() => {
-    const loadAnimation = document.querySelector('.clip-js1');
-    loadAnimation.classList.toggle('reveal');
-  }, 2000);
-
-  // const loadAnimation2 = document.querySelectorAll('.clip-js2');
-  // loadAnimation2.forEach(function (element) {
-  //   setTimeout(() => {
-  //     element.classList.add("reveal");
-  //   }, 1000)
-  // });
+  const loadAnimation = document.querySelectorAll('.clip-js1');
+  loadAnimation.forEach(function (element) {
+    setTimeout(() => {
+      element.classList.add("reveal");
+    }, 4000)
+  });
 });

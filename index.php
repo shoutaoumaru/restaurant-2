@@ -492,7 +492,7 @@
         <ul class="p-news__list item"> <?php query_posts('posts_per_page=3'); ?>
           <?php if (have_posts()) : while(have_posts()) : the_post();?>
             <li class="p-news__item">
-              <a href="<?php the_permalink(); ?>" class="p-news__link">
+              <a href="<?php the_permalink(); ?>" class="p-news__link animsition-link">
                 <span class="p-news__date"><?php echo get_the_date(); ?></span>
                 <p class="p-news__tit"><?php the_title(); ?></p>
               </a>

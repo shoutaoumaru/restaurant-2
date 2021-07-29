@@ -55,7 +55,6 @@
     <section class="c-news-sl">
       <div class="c-container">
         <ul class="c-news-sl__list">
-        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
           <li class="c-news-sl__block">
             <div class="c-news-sl__tit">
               <p class="c-txt-md"><?php the_title(); ?></p>
@@ -66,8 +65,6 @@
               <p class="c-txt-sm"><?php the_content(); ?></p>
             </div>
           </li>
-          <?php endwhile; ?>
-          <?php endif; ?>
         </ul>
         <div class="c-news-sl__link">
           <a class="more-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span class="readmore">一覧へ戻る</span></a>
