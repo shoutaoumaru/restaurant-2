@@ -775,7 +775,7 @@ img {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -788,7 +788,7 @@ img {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -803,7 +803,7 @@ img {
 .icon-map::before {
   content: '';
   display: block;
-  background-image: url(/images/home/icon-map.png);
+  background-image: url(../images/home/icon-map.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -824,7 +824,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/images/home/icon-insta-gr.png);
+  background-image: url(../images/home/icon-insta-gr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -837,7 +837,7 @@ img {
 }
 
 .header .logo {
-  background-image: url(/images/home/riv_logo.png);
+  background-image: url(../images/home/riv_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -851,13 +851,13 @@ img {
 .header .menu-open.logo {
   -webkit-transition: all .3s;
   transition: all .3s;
-  background-image: url(/images/home/riv_logo.png) !important;
+  background-image: url(../images/home/riv_logo.png) !important;
 }
 
 .header .inview.logo {
   -webkit-transition: all .3s;
   transition: all .3s;
-  background-image: url(/images/home/riv_logo-white.png);
+  background-image: url(../images/home/riv_logo-white.png);
 }
 
 .header .logo-gr {
@@ -1192,7 +1192,7 @@ img {
   left: 0;
   height: 16px;
   width: 16px;
-  background-image: url(/images/home/icon-map.png);
+  background-image: url(../images/home/icon-map.png);
   background-size: contain;
 }
 
@@ -1237,12 +1237,7 @@ img {
 
 .c-news__link {
   display: block;
-  padding: 8vw 0;
-  border-bottom: 1px solid #ebebeb;
-}
-
-.c-news__link:first-child {
-  border-top: 1px solid #ebebeb;
+  padding: 6vw 0;
 }
 
 .c-news__link p {
@@ -1255,6 +1250,14 @@ img {
 
 .c-news__tit {
   color: #3b3b3b;
+}
+
+.c-news__item {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.c-news__item:first-child {
+  border-top: 1px solid #ebebeb;
 }
 
 .c-news .page-numbers {
@@ -1301,7 +1304,7 @@ img {
   content: "";
   position: absolute;
   right: 0;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1757,7 +1760,7 @@ img {
   right: 5px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1774,7 +1777,7 @@ img {
   right: 10px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-size: contain;
   background-repeat: no-repeat;
 }

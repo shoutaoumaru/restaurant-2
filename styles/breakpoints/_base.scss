@@ -164,7 +164,7 @@ img {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -177,7 +177,7 @@ img {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -191,7 +191,7 @@ img {
   &::before {
     content: '';
     display: block;
-    background-image: url(/images/home/icon-map.png);
+    background-image: url(../images/home/icon-map.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -200,7 +200,6 @@ img {
   }
 
 }
-
 
 .icon-insta {
   position: relative;
@@ -214,7 +213,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(/images/home/icon-insta-gr.png);
+    background-image: url(../images/home/icon-insta-gr.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -230,7 +229,7 @@ img {
   }
 
   & .logo {
-    background-image: url(/images/home/riv_logo.png);
+    background-image: url(../images/home/riv_logo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -243,14 +242,14 @@ img {
   & .menu-open {
     &.logo {
       transition: all .3s;
-      background-image: url(/images/home/riv_logo.png) !important;
+      background-image: url(../images/home/riv_logo.png) !important;
     }
   }
 
   & .inview {
     &.logo {
       transition: all .3s;
-      background-image: url(/images/home/riv_logo-white.png);
+      background-image: url(../images/home/riv_logo-white.png);
     }
   }
 
@@ -599,7 +598,7 @@ img {
         left: 0;
         height: 16px;
         width: 16px;
-        background-image: url(/images/home/icon-map.png);
+        background-image: url(../images/home/icon-map.png);
         background-size: contain;
 
       }
@@ -649,17 +648,11 @@ img {
 
   &__link {
     display: block;
-    padding: 8vw 0;
-    border-bottom: 1px solid rgb(235, 235, 235);
-
-    &:first-child {
-      border-top: 1px solid rgb(235, 235, 235);
-    }
+    padding: 6vw 0;
 
     & p {
       margin-top: 2vw;
     }
-
   }
 
   &__date {
@@ -668,6 +661,14 @@ img {
 
   &__tit {
     color: $cBlack;
+  }
+
+  &__item {
+    border-bottom: 1px solid rgb(235, 235, 235);
+
+    &:first-child {
+      border-top: 1px solid rgb(235, 235, 235);
+    }
   }
 
   .page-numbers {
@@ -705,7 +706,7 @@ img {
         content: "";
         position: absolute;
         right: 0;
-        background-image: url(/images/common/arrow.png);
+        background-image: url(../images/common/arrow.png);
         background-position: right center;
         background-repeat: no-repeat;
         background-size: 100% 100%;

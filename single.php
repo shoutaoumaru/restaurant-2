@@ -2,24 +2,15 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>飲食店テンプレート1/NEWS</title>
-  <link rel="stylesheet" href="../styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="../styles/vendor/animsition.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400&family=Noto+Serif+JP:wght@200;400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../styles/style.css">
+  <title>飲食店テンプレート1/NEWS/single</title>
+  <?php get_header(); ?>
 </head>
 
 <body>
   <div class="superwrapper animsition">
     <header id="header" class="header">
       <div class="mobile-container">
-        <div class=" logo__img">
+        <div class="logo__img">
           <a class="animsition-link" href="/">
             <div class="logo"></div>
           </a>
@@ -42,10 +33,10 @@
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/"><span>TOP</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/')); ?>"><span>TOP</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>NEWS</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>NEWS</span></a>
             </li>
           </ul>
         </nav>
@@ -61,59 +52,67 @@
       <!-- /.nav-btn -->
     </header>
     <!-- /#header -->
-    <section class="c-news">
+    <section class="c-news-sl">
       <div class="c-container">
-        <h3 class="c-news__title">
-          <span class="c-txt-lr">News</span>
-        </h3>
-        <ul class="c-news__list">
-          <li class="c-news__item">
-            <a href="/news/news-single.html" class="c-news__link animsition-link">
-              <span class="c-news__date">2021.4.5</span>
-              <p class="c-news__tit">新型コロナウィルス感染予防について。</p>
-            </a>
+        <ul class="c-news-sl__list">
+        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+          <li class="c-news-sl__block">
+            <div class="c-news-sl__tit">
+              <p class="c-txt-md"><?php the_title(); ?></p>
+              <span class="c-news-sl__date"><?php echo get_the_date(); ?></span>
+            </div>
+            <?php the_post_thumbnail('thumbnail'); ?>
+            <div class="c-news-sl__contents">
+              <p class="c-txt-sm"><?php the_content(); ?></p>
+            </div>
           </li>
-          <li class="c-news__item">
-            <a href="/news/news-single.html" class="c-news__link animsition-link">
-              <span class="c-news__date">2021.1.5</span>
-              <p class="c-news__tit">東京都緊急事態宣言について。</p>
-            </a>
-          </li>
-          <li class="c-news__item">
-            <a href="/news/news-single.html" class="c-news__link animsition-link">
-              <span class="c-news__date">2020.11.5</span>
-              <p class="c-news__tit">時短営業について。</p>
-            </a>
-          </li>
-
+          <?php endwhile; ?>
+          <?php endif; ?>
         </ul>
-        <ul class="page-numbers">
-          <li>
-            <span aria-current="page" class="page-numbers current">1</span>
-          </li>
-          <li>
-            <a class="page-numbers" href="#">2</a>
-          </li>
-          <li>
-            <a class="page-numbers" href="#">3</a>
-          </li>
-          <li>
-            <span class="page-numbers dots">…</span>
-          </li>
-          <li>
-            <a class="page-numbers" href="#">6</a>
-          </li>
-          <li>
-            <a class="next page-numbers" href="#">次のページへ</a>
-          </li>
-        </ul>
+        <div class="c-news-sl__link">
+          <a class="more-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span class="readmore">一覧へ戻る</span></a>
+        </div>
       </div>
     </section>
     <!-- /.news-top -->
     <footer class="footer">
       <div class="c-container">
         <div class="c-logo">
-          <img src="/images/home/riv_logo-white.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/riv_logo-white.png" alt="">
+        </div>
+        <div class="footer__info">
+          <ul class="footer__item c-txt-xs">
+            <li class="nav-address">
+              <p class="c-txt-xs">
+                〒812-0041<br class="view-pc">
+                福岡県福岡市博多区博多駅前<br class="view-pc">3-27-25,第二岡部ビル9F
+              </p>
+            </li>
+            <li class="nav-tel">
+              <p>TEL</p><a href="tel:092-686-7954"> 092-686-7954</a>
+            </li>
+            <li class="nav-time">
+              <div class="head">ランチ</div>
+              <div class="txt">11:00〜14:00</div>
+            </li>
+            <li class="nav-time">
+              <div class="head">ディナー</div>
+              <div class="txt">17:00〜22:00</div>
+            </li>
+            <li class="nav-date">
+              <div class="head">定休日</div>
+              <div class="txt">水曜日</div>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          &copy; RivRound.inc
+        </div>
+      </div>
+      <footer class="footer">
+      <div class="c-container">
+        <div class="c-logo">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/riv_logo-white.png" alt="">
         </div>
 
         <div class="footer__info">
@@ -151,10 +150,10 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">TOP</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">TOP</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">NEWS
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">NEWS
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -176,10 +175,7 @@
     <!------ /.mobile-menu ----->
   </div>
   <!-- .superwrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="../scripts/vendor/animsition.min.js"></script>
-  <script src="../scripts/libs/page.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
+  <?php get_template_part('includes/c-footer'); ?>
 </body>
 
 </html>
