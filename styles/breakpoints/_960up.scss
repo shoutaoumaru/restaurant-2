@@ -112,7 +112,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//#top 
+//#top
 .p-top {
   padding-bottom: 10vw;
 
@@ -151,7 +151,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//#concept 
+//#concept
 .p-concept {
   & .c-img {
     width: 80%;
@@ -185,7 +185,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//#news 
+//#news
 .p-news {
   padding-top: 5vw;
 
@@ -249,7 +249,6 @@ Stylesheet: 960px以上のモニタで適用
     }
 
     & .panel {
-
       & p,
       span,
       h3 {
@@ -302,11 +301,9 @@ Stylesheet: 960px以上のモニタで適用
     & .ja {
       font-size: 1.1rem;
     }
-
   }
 
   & address {
-
     & p {
       margin-top: 14vw;
       font-size: 1.2rem;
@@ -359,7 +356,6 @@ Stylesheet: 960px以上のモニタで適用
       width: 30px;
     }
   }
-
 }
 
 //footer
@@ -407,7 +403,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//* *  * * * * * * * menu-page * * * * * * * * * * 
+//* *  * * * * * * * menu-page * * * * * * * * * *
 .c-top {
   margin-top: 5vw;
 
@@ -448,7 +444,7 @@ Stylesheet: 960px以上のモニタで適用
 
 //* * * * * * news-sl-page * * * * * * *
 .c-news-sl {
-  padding-top: 200px;
+  padding-top: 35px;
 
   & .c-container {
     padding: 0 12vw;

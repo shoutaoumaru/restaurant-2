@@ -1,6 +1,9 @@
 body {
-  font-family: 'Josefin Slab', serif;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Josefin Slab", serif;
+  font-family: "Noto Serif JP", serif;
+  &.hidden {
+    overflow: hidden;
+  }
 }
 
 img {
@@ -32,14 +35,14 @@ img {
 }
 
 .c-txt-sm {
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cSubBlack;
 }
 
 .c-txt-xs {
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cSubBlack;
@@ -47,7 +50,7 @@ img {
 
 .page-link {
   font-weight: bold;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: rgb(66, 66, 66);
 }
 
@@ -80,7 +83,7 @@ img {
       position: absolute;
       top: 50%;
       left: 0;
-      content: '';
+      content: "";
       display: inline-block;
       height: 1px;
       width: 8vw;
@@ -111,14 +114,13 @@ img {
       position: absolute;
       top: 50%;
       left: 0;
-      content: '';
+      content: "";
       display: inline-block;
       height: 1px;
       width: 8vw;
       background-color: $cGray;
     }
   }
-
 }
 
 .c-txtarea {
@@ -136,10 +138,9 @@ img {
     line-height: 2.2;
     color: $cSubBlack;
     font-weight: 100;
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-bottom: 4vw;
   }
-
 }
 
 .c-txt02 {
@@ -189,7 +190,7 @@ img {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     background-image: url(../images/home/icon-map.png);
     background-position: center;
@@ -198,7 +199,6 @@ img {
     height: 17px;
     width: 17px;
   }
-
 }
 
 .icon-insta {
@@ -209,7 +209,7 @@ img {
   padding-bottom: 5px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -236,19 +236,19 @@ img {
     margin: 3vw 0 0 5vw;
     height: 44px;
     width: 110px;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   & .menu-open {
     &.logo {
-      transition: all .3s;
+      transition: all 0.3s;
       background-image: url(../images/home/riv_logo.png) !important;
     }
   }
 
   & .inview {
     &.logo {
-      transition: all .3s;
+      transition: all 0.3s;
       background-image: url(../images/home/riv_logo-white.png);
     }
   }
@@ -262,7 +262,7 @@ img {
     bottom: 0;
     left: 0;
     background-color: $cWhite;
-    opacity: .7;
+    opacity: 0.7;
     height: 7.5vh;
     width: 100%;
     z-index: 2000;
@@ -308,14 +308,14 @@ img {
     }
   }
 
-  @media (max-width:959px) {
+  @media (max-width: 959px) {
     & .pc-container {
       display: none;
     }
   }
 }
 
-//#top 
+//#top
 .p-top {
   position: relative;
   padding-bottom: 20vw;
@@ -338,19 +338,17 @@ img {
     & .sub {
       & p {
         font-weight: 300;
-        font-size: .9rem;
+        font-size: 0.9rem;
         line-height: 2;
         color: $cWhite;
       }
     }
-
-
   }
 
   & .swiper-container {
     height: 91vh;
 
-    @media (max-width:959px) {
+    @media (max-width: 959px) {
       .view-pc {
         display: none;
       }
@@ -362,9 +360,8 @@ img {
 .p-info {
   margin-bottom: 20vw;
 
-
   & h3 {
-    font-size: .95rem;
+    font-size: 0.95rem;
     color: $cBlack;
     padding-bottom: 4vw;
   }
@@ -383,13 +380,13 @@ img {
   }
 
   &__sns {
-    &>h3 {
+    & > h3 {
       letter-spacing: 3px;
     }
   }
 }
 
-//#concept 
+//#concept
 .p-concept {
   position: relative;
   padding-bottom: 15vw;
@@ -430,11 +427,11 @@ img {
     &__subtit {
       margin: 5vw 0;
       font-weight: 100;
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
 
     &__txt {
-      font-size: .6rem;
+      font-size: 0.6rem;
     }
   }
 }
@@ -453,7 +450,7 @@ img {
   }
 }
 
-//#menu 
+//#menu
 .p-menu {
   position: relative;
   padding-bottom: 15vw;
@@ -484,11 +481,10 @@ img {
 
       & p {
         padding-top: 5vw;
-        font-size: .6rem;
+        font-size: 0.6rem;
         font-weight: 100;
         line-height: 2.5;
       }
-
     }
 
     .tab-group {
@@ -510,20 +506,20 @@ img {
       }
 
       &__txt {
-        font-size: .8rem;
+        font-size: 0.8rem;
       }
     }
 
     .dinner {
       &__txt {
-        font-size: .8rem;
+        font-size: 0.8rem;
         padding-bottom: 8vw;
       }
     }
 
     .drink {
       &__item {
-        font-size: .8rem;
+        font-size: 0.8rem;
         padding-bottom: 8vw;
       }
 
@@ -591,7 +587,7 @@ img {
       border-bottom: 1px solid rgb(133, 133, 133);
 
       &::before {
-        content: '';
+        content: "";
         display: inline-block;
         position: absolute;
         top: 4px;
@@ -600,13 +596,12 @@ img {
         width: 16px;
         background-image: url(../images/home/icon-map.png);
         background-size: contain;
-
       }
     }
   }
 }
 
-//news 
+//news
 .p-news {
   position: relative;
   padding-bottom: 30vw;
@@ -617,7 +612,7 @@ img {
 
   &__item {
     padding: 5vw 5vw;
-    font-size: .8rem;
+    font-size: 0.8rem;
     border-top: 1px solid rgb(216, 216, 216);
 
     &:last-child {
@@ -628,7 +623,7 @@ img {
   &__date {
     letter-spacing: 2px;
     border: 1px solid rgb(240, 240, 240);
-    padding: .5vw;
+    padding: 0.5vw;
     background-color: rgb(250, 250, 250);
     border-radius: 5%;
   }
@@ -642,9 +637,9 @@ img {
   }
 }
 
-//* * * * * * news-page * * * * * * * 
+//* * * * * * news-page * * * * * * *
 .c-news {
-  padding-top: 150px;
+  padding-top: 20px;
 
   &__link {
     display: block;
@@ -691,7 +686,7 @@ img {
       width: 10vw;
       height: 10vw;
       border-radius: 100%;
-      border: 1px solid #C4CCD1;
+      border: 1px solid #c4ccd1;
       background: #fff;
       margin: 0 1.3vw;
     }
@@ -717,13 +712,13 @@ img {
       }
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       & .next {
         display: none;
       }
     }
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 40px;
         height: 40px;
@@ -737,7 +732,7 @@ img {
 
   .c-news__contents {
     line-height: 2;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .c-news__title {
@@ -754,10 +749,8 @@ img {
   }
 }
 
-//* * * * * * news-single-page * * * * * * * 
+//* * * * * * news-single-page * * * * * * *
 .c-news-sl {
-  padding-top: 100px;
-
   & .c-container {
     padding: 0 5vw;
   }
@@ -811,7 +804,7 @@ img {
     }
 
     & .nav-time {
-      @media (min-width:600px) {
+      @media (min-width: 600px) {
         display: flex;
 
         & .head {
@@ -833,7 +826,7 @@ img {
     padding-bottom: 5vw;
 
     &__item {
-      font-size: .85rem;
+      font-size: 0.85rem;
 
       & a {
         color: rgb(240, 240, 240);
@@ -841,11 +834,10 @@ img {
     }
   }
 
-
   & .copyright {
     color: $cWhite;
     font-weight: 100;
-    font-size: .7rem;
+    font-size: 0.7rem;
     letter-spacing: 5px;
   }
 }
