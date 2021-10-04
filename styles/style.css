@@ -821,6 +821,7 @@ img {
   color: #3b3b3b;
   border-bottom: 1px solid #a0a0a0;
   padding-bottom: 5px;
+  font-size: 22px;
 }
 
 .icon-insta::before {
@@ -828,12 +829,14 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  margin: auto;
   background-image: url(/images/home/icon-insta-gr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
 }
 
 .header .logo__img {
@@ -1046,17 +1049,17 @@ img {
   font-size: 0.6rem;
 }
 
-.p-gallery {
+.p-instagram {
   padding-bottom: 40vw;
 }
 
-.p-gallery__img {
+.p-instagram__img {
   padding: 0 5vw;
 }
 
-.p-gallery .more-link {
-  display: block;
-  margin-top: 10vw;
+.p-instagram .insta-link {
+  margin-top: 50px;
+  text-align: right;
 }
 
 .p-menu {
@@ -2600,10 +2603,10 @@ Stylesheet: 960px以上のモニタで適用
     padding: 4vw 0;
     font-size: 1.2rem;
   }
-  .p-gallery {
+  .p-instagram {
     padding-bottom: 20vw;
   }
-  .p-gallery__img {
+  .p-instagram__img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2613,14 +2616,14 @@ Stylesheet: 960px以上のモニタで適用
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .p-gallery__img img {
+  .p-instagram__img img {
     width: 50%;
     border: 10px solid #fff;
   }
-  .p-gallery__img .photo4 {
+  .p-instagram__img .photo4 {
     margin-top: 17px;
   }
-  .p-gallery__img .photo2 {
+  .p-instagram__img .photo2 {
     margin-top: 17px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
