@@ -821,6 +821,7 @@ img {
   color: #3b3b3b;
   border-bottom: 1px solid #a0a0a0;
   padding-bottom: 5px;
+  font-size: 22px;
 }
 
 .icon-insta::before {
@@ -828,12 +829,14 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  margin: auto;
   background-image: url(../images/home/icon-insta-gr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
 }
 
 .header .logo__img {
@@ -1046,17 +1049,17 @@ img {
   font-size: 0.6rem;
 }
 
-.p-gallery {
+.p-instagram {
   padding-bottom: 40vw;
 }
 
-.p-gallery__img {
+.p-instagram__img {
   padding: 0 5vw;
 }
 
-.p-gallery .more-link {
-  display: block;
-  margin-top: 10vw;
+.p-instagram .insta-link {
+  margin-top: 50px;
+  text-align: right;
 }
 
 .p-menu {

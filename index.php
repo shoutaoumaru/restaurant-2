@@ -171,14 +171,6 @@
           <p class="c-txt-xs">※変更がある場合は<a class="page-link" href="#news">NEWS</a>ページや<a class="page-link"
               href="https://www.instagram.com/shouta_oumaru/" target="_blank">Instagram</a>でお伝えしますのでご確認下さい。</p>
         </div>
-        <div class="p-info__sns item">
-          <h3>SNS</h3>
-          <div class="p-info__insta">
-            <a href="https://www.instagram.com/?hl=ja" target="_blank" class="insta">
-              <span class="icon-insta">Instagram</span>
-            </a>
-          </div>
-        </div>
       </div>
     </section>
     <!-- /#info -->
@@ -251,21 +243,29 @@
       </div>
     </section>
     <!-- /#concept -->
-    <section id="gallery" class="p-gallery">
+    <section id="instagram" class="p-instagram">
       <div class="c-container">
         <h3 class="c-title02 clip-js left">
           <span class="num">02</span>
           <span class="txt">Gallery</span>
         </h3>
-        <div class="p-gallery__img appear  up">
+        <div class="p-instagram__img appear up">
           <img class="photo1 item" src="<?php echo get_template_directory_uri(); ?>/images/home/steak_2@pc.jpg" alt="">
           <img class="photo2 item" src="<?php echo get_template_directory_uri(); ?>/images/home/sushi_1@pc.jpg" alt="">
           <img class="photo3 item" src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
           <img class="photo4 item" src="<?php echo get_template_directory_uri(); ?>/images/home/yakitori.jpg" alt="">
         </div>
+        <!-- インスタグラムフィード -->
+        <?php echo apply_filters('the_content', '[instagram-feed]'); ?>
+        <!-- インスタグラムフィード -->
+          <div class="insta-link">
+            <a href="https://www.instagram.com/?hl=ja" target="_blank" class="insta">
+              <span class="icon-insta">Instagram</span>
+            </a>
+        </div>
       </div>
     </section>
-    <!-- /#gallery -->
+    <!-- /#instagram -->
     <section id="menu" class="p-menu">
       <div class="c-container">
         <div class="p-menu__description appear up">

@@ -1,6 +1,7 @@
 body {
   font-family: "Josefin Slab", serif;
   font-family: "Noto Serif JP", serif;
+
   &.hidden {
     overflow: hidden;
   }
@@ -207,18 +208,21 @@ img {
   color: $cBlack;
   border-bottom: 1px solid $cGray;
   padding-bottom: 5px;
+  font-size: 22px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
+    margin: auto;
     background-image: url(../images/home/icon-insta-gr.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
   }
 }
 
@@ -380,7 +384,7 @@ img {
   }
 
   &__sns {
-    & > h3 {
+    &>h3 {
       letter-spacing: 3px;
     }
   }
@@ -436,17 +440,17 @@ img {
   }
 }
 
-//#gallery
-.p-gallery {
+//#instagram
+.p-instagram {
   padding-bottom: 40vw;
 
   &__img {
     padding: 0 5vw;
   }
 
-  & .more-link {
-    display: block;
-    margin-top: 10vw;
+  .insta-link {
+    margin-top: 50px;
+    text-align: right;
   }
 }
 
