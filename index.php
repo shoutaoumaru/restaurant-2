@@ -243,13 +243,13 @@
       </div>
     </section>
     <!-- /#concept -->
-    <section id="instagram" class="p-instagram">
+    <section id="instagram" class="p-insta">
       <div class="c-container">
         <h3 class="c-title02 clip-js left">
           <span class="num">02</span>
           <span class="txt">Gallery</span>
         </h3>
-        <div class="p-instagram__img appear up">
+        <div class="p-insta__img appear up">
           <img class="photo1 item" src="<?php echo get_template_directory_uri(); ?>/images/home/steak_2@pc.jpg" alt="">
           <img class="photo2 item" src="<?php echo get_template_directory_uri(); ?>/images/home/sushi_1@pc.jpg" alt="">
           <img class="photo3 item" src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
@@ -279,172 +279,200 @@
             </div>
           </div>
         </div>
-        <div class="menu-contents appear up">
-          <h2 class="menu-title item">
-            <span>Our Menu</span>
-            <p>食の感動体験をテーマに、水々しい朝採れ野菜の料理や、90日熟成の神戸ビーフ、<br class="view-pc">厳選の魚介をご提供します。</p>
-          </h2>
-          <div class="menu-contents__list item">
-            <div class="tab-panel">
-              <!--tab-->
-              <ul class="tab-group">
-                <li class="tab lunch is-active">Lunch</li>
-                <li class="tab tab-B">Dinner</li>
-                <li class="tab tab-C">Drink</li>
-              </ul>
-              <!--tab-contents-->
-              <div class="panel-group">
-                <div class="panel lunch is-show">
-                  <div class="lunch-container">
-                    <div class="lunch__item">
-                      <div class="lunch__txt">
-                        <p class="name">ランチA</p>
-                        <p class="price">¥1,500</p>
-                      </div>
-                    </div>
-                    <div class="lunch__item">
-                      <div class="lunch__txt">
-                        <p class="name">ランチB</p>
-                        <p class="price">¥2,500</p>
-                      </div>
-                    </div>
-                    <div class="lunch__item">
-                      <div class="lunch__txt">
-                        <p class="name">ランチC</p>
-                        <p class="price">¥2,500</p>
-                      </div>
-                    </div>
-                    <div class="lunch__item">
-                      <div class="lunch__txt">
-                        <p class="name">ランチD</p>
-                        <p class="price">¥2,500</p>
-                      </div>
-                    </div>
-                    <div class="lunch__item">
-                      <div class="lunch__txt">
-                        <p class="name">ランチE</p>
-                        <p class="price">¥2,500</p>
-                      </div>
-                    </div>
-                    <div class="lunch__item">
-                      <div class="lunch__txt">
-                        <p class="name">ランチF</p>
-                        <p class="price">¥2,500</p>
-                      </div>
-                    </div>
+        <div class="pdf-link">
+          <a href="<?php echo get_template_directory_uri(); ?>/images/" target="_blank" rel="noopener noreferrer">PDFで見る</a>
+        </div>
+        <div class="menu-contents__list item">
+          <div class="tab-panel">
+            <!--tab-->
+            <ul class="tab-group">
+              <li class="tab tab-A is-active">Lunch</li>
+              <li class="tab tab-B">Dinner</li>
+              <li class="tab tab-C">Drink</li>
+            </ul>
+            <!--tab-contents-->
+            <div class="panel-group">
+              <div class="panel lunch is-show">
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Aランチ</p>
+                    <p class="price">¥1,500</p>
                   </div>
                 </div>
-                <div class="panel dinner">
-                  <div class="dinner-container">
-                    <div class="dinner__txt">
-                      <p class="name">刺し身の盛り合わせ</p>
-                      <p class="price">¥1,500</p>
-                    </div>
-                    <div class="dinner__txt">
-                      <p class="name">胡麻さば</p>
-                      <p class="price">¥800</p>
-                    </div>
-                    <div class="dinner__txt">
-                      <p class="name">ホッケの開き</p>
-                      <p class="price">¥800</p>
-                    </div>
-                    <div class="dinner__txt">
-                      <p class="name">ラムチョップ</p>
-                      <p class="price">¥1,200</p>
-                    </div>
-                    <div class="dinner__txt">
-                      <p class="name">牛ほほ肉の赤ワイン煮</p>
-                      <p class="price">¥500</p>
-                    </div>
-                    <div class="dinner__txt">
-                      <p class="name">だし巻き玉子</p>
-                      <p class="price">¥500</p>
-                    </div>
-                    <div class="dinner__txt">
-                      <p class="name">エビマヨ</p>
-                      <p class="price">¥800</p>
-                    </div>
-                    <div class="dinner__txt">
-                      <p class="name">ポテトサラダ</p>
-                      <p class="price">¥500</p>
-                    </div>
-                    <div class="dinner__txt">
-                      <p class="name">枝豆</p>
-                      <p class="price">¥300</p>
-                    </div>
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Bランチ</p>
+                    <p class="price">¥1,800</p>
                   </div>
                 </div>
-                <div class="panel drink">
-                  <div class="drink-container">
-                    <div class="drink__item">
-                      <div class="drink__block">
-                        <h3>Beer</h3>
-                        <div class="c-drink">
-                          <p class="name">プレミアムモルツ</p>
-                          <p class="price">¥700</p>
-                        </div>
-                        <div class="c-drink">
-                          <p class="name">アサヒ スーパードライ</p>
-                          <p class="price">¥700</p>
-                        </div>
-                        <div class="c-drink">
-                          <p class="name">キリン 一番しぼり</p>
-                          <p class="price">¥700</p>
-                        </div>
-
-                      </div>
-                    </div>
-                    <div class="drink__item">
-                      <div class="drink__block">
-                        <h3>Cocktail</h3>
-                        <div class="c-drink">
-                          <p class="name">サントリー 角ハイボール</p>
-                          <p class="price">¥700</p>
-                        </div>
-                        <div class="c-drink">
-                          <p class="name">山崎プレミアムハイボール</p>
-                          <p class="price">¥800</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="drink__item">
-                      <div class="drink__block">
-                        <h3>Sake</h3>
-                        <div class="c-drink">
-                          <p class="name">天心</p>
-                          <p class="price">¥700</p>
-                        </div>
-                        <div class="c-drink">
-                          <p class="name">獺祭</p>
-                          <p class="price">¥700</p>
-                        </div>
-                        <div class="c-drink">
-                          <p class="name">東一</p>
-                          <p class="price">¥700</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="drink__item">
-                      <div class="drink__block">
-                        <h3>Whine</h3>
-                        <div class="c-drink">
-                          <p class="name">ラブベット カステルモール（赤・白）</p>
-                          <p class="price">¥700</p>
-                        </div>
-                        <div class="c-drink">
-                          <p class="name">ラブベット ヴィニャ（赤・白）</p>
-                          <p class="price">¥800</p>
-                        </div>
-                      </div>
-                    </div>
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Cランチ</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Dランチ</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Eランチ</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Fランチ</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Gランチ</p>
+                    <p class="price">¥2,500</p>
                   </div>
                 </div>
               </div>
+              <!-- panel-lunch END -->
+              <div class="panel dinner">
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Aメニュー</p>
+                    <p class="price">¥1,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Bメニュー</p>
+                    <p class="price">¥1,800</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Cメニュー</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Dメニュー</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Eメニュー</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Fメニュー</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/home/pizza.jpg" alt="">
+                  </div>
+                  <div class="panel__txt">
+                    <p class="name">Gメニュー</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+              </div>
+              <!-- panel-dinner END -->
+              <div class="panel drink">
+                <div class="panel__item">
+                  <div class="panel__txt">
+                    <p class="name">Aドリンク</p>
+                    <p class="price">¥1,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__txt">
+                    <p class="name">Bドリンク</p>
+                    <p class="price">¥1,800</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__txt">
+                    <p class="name">Cドリンク</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__txt">
+                    <p class="name">Dドリンク</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__txt">
+                    <p class="name">Eドリンク</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__txt">
+                    <p class="name">Fドリンク</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+                <div class="panel__item">
+                  <div class="panel__txt">
+                    <p class="name">Gドリンク</p>
+                    <p class="price">¥2,500</p>
+                  </div>
+                </div>
+              </div>
+              <!-- panel-drink END -->
             </div>
-            <p class="c-txt-xs">※上記メニューは当店の定番メニューのみの記載になります。<br class="view-pc">時期に合わせた旬のものを多くご準備しておりますのでご予約お待ちしております。
-            </p>
           </div>
         </div>
+        <p class="c-txt-xs">※上記以外にも旬のものを多数ご用意しております。</p>
       </div>
     </section>
     <!-- /#menu -->
