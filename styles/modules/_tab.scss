@@ -1,11 +1,25 @@
+.pdf-link {
+  text-align: center;
+  margin-bottom: 50px;
+
+  & a {
+    border: 1px solid $cSubWhite;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: $cBlack;
+  }
+}
+
 .tab-group {
   display: flex;
   justify-content: space-around;
   padding-bottom: 3vw;
   border-bottom: 1px solid rgb(143, 143, 143);
+
+  & .tab {
+    cursor: pointer;
+  }
 }
-
-
 
 .panel {
   display: none;
@@ -17,5 +31,46 @@
 }
 
 .panel.is-show {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.panel-group {
+  padding: 2vw 0vw;
+}
+
+.name {
+  margin-bottom: 10px;
+}
+
+.panel {
+
+  &__item {
+    width: 47%;
+    padding: 3vw 0;
+  }
+
+  &__img {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width:960px) {
+    &__item {
+      width: 30%;
+      padding: 3vw 0;
+    }
+
+    & .name {
+      font-size: 24px;
+    }
+
+    & .price {
+      font-size: 24px;
+    }
+
+    &__img {
+      margin-bottom: 15px;
+    }
+  }
 }

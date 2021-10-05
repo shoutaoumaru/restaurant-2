@@ -13,6 +13,10 @@ Stylesheet: 600px以上のモニタで適用
   font-size: .8rem;
 }
 
+.c-txtarea {
+  padding: 3vw;
+}
+
 .c-container {
   padding: 0 10vw;
 }
@@ -51,6 +55,8 @@ Stylesheet: 600px以上のモニタで適用
 
 //#top
 .p-top {
+  padding-bottom: 10vw;
+
   & .swiper-container {
     height: 100vh;
   }
@@ -61,17 +67,34 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
+//#info 
+.p-info {
+  margin-bottom: 0vw;
+
+  &__time {
+    display: flex;
+    justify-content: space-between;
+
+    & div {
+      width: 33%;
+    }
+  }
+}
+
 //#concept
 .p-concept {
   .c-img {
+    width: 70%;
 
     & img {
       height: 45vh;
     }
+
   }
 
   .c-txtarea {
-    top: 12%;
+    top: 8%;
+    left: 30vw;
 
     & .ja {
       font-size: .8rem;
@@ -81,7 +104,15 @@ Stylesheet: 600px以上のモニタで適用
   .p-speciality {
     margin-top: 30vw;
 
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
     &__item {
+      width: 46%;
+
       & img {
         height: 300px;
       }
@@ -94,6 +125,19 @@ Stylesheet: 600px以上のモニタで適用
 
     &__txt {
       font-size: .8rem;
+    }
+  }
+}
+
+//#instagram
+.p-insta {
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & img {
+      width: 50%;
     }
   }
 }
@@ -180,26 +224,44 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//#access 
+//#access
 .p-access {
+  padding-bottom: 10vw;
+
+  & .c-img {
+    width: 80%;
+  }
+
+  .c-title {
+    top: 6%;
+  }
+
   .c-txtarea {
-    top: 36%;
+    top: 16%;
+    left: 50vw;
+    padding: 4vw;
+
+    & .ja {
+      font-size: 1.1rem;
+    }
+
+  }
+
+  & iframe {
+    padding: 20px;
+    width: 400px;
+    height: 300px;
   }
 
   &__gmap {
-    margin-top: 10vw;
+    margin-top: 0;
   }
 
-  & .g-map__wrap {
-    display: flex;
-    justify-content: space-around;
-
-    & address {
-      margin-top: 10vw;
-
-      & p {
-        margin-bottom: 10px;
-      }
+  .g-map {
+    &__wrap {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
   }
 }

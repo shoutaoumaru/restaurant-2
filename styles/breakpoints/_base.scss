@@ -57,6 +57,20 @@ img {
 
 .c-img {
   margin: 0 -5vw;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    background-color: $cBlack;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    opacity: 0.4;
+  }
 }
 
 .c-title {
@@ -133,6 +147,7 @@ img {
   background-color: rgb(248, 245, 245);
   border: 1px solid rgb(216, 216, 216);
   box-shadow: 3px 3px 3px rgb(235, 235, 235);
+  z-index: 200;
 
   & .ja {
     letter-spacing: 3px;
@@ -204,7 +219,7 @@ img {
 
 .icon-insta {
   position: relative;
-  padding-left: 10vw;
+  padding-left: 30px;
   color: $cBlack;
   border-bottom: 1px solid $cGray;
   padding-bottom: 5px;
@@ -362,7 +377,7 @@ img {
 
 //#info
 .p-info {
-  margin-bottom: 20vw;
+  margin-bottom: 15vw;
 
   & h3 {
     font-size: 0.95rem;
@@ -442,7 +457,7 @@ img {
 
 //#instagram
 .p-instagram {
-  padding-bottom: 40vw;
+  padding-bottom: 20vw;
 
   &__img {
     padding: 0 5vw;
@@ -545,7 +560,7 @@ img {
   text-align: center;
 
   & .c-txtarea {
-    top: 41%;
+    top: 28%;
   }
 
   & .c-title {
@@ -559,7 +574,7 @@ img {
   }
 
   &__gmap {
-    margin-top: 35vw;
+    margin-top: 5vw;
 
     & h3 {
       text-align: center;
@@ -580,7 +595,6 @@ img {
   }
 
   & address {
-    margin-top: 5vw;
 
     & .google-map {
       position: relative;
